@@ -6,6 +6,9 @@ console.log(person1[2])
 
 const person2: [name: string, occupation: string, age: number] = ['Sasuke', 'Shadow Hokage', 34]
 console.log(person2)
+console.log(person2[0])
+console.log(person2[1])
+console.log(person2[2])
 
 const fruitList: [string, ...string[]] = ['morango', 'manga', 'kiwi', 'banana', 'cupuaçu']
 console.log(...fruitList)
