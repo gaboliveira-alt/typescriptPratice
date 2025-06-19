@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/basics/lesson12.ts",
+    "dev": "ts-node src/basics/lesson19.ts",
     "build": "del /s /q build && tsc"
   },
   "author": "",

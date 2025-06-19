@@ -25,8 +25,8 @@ console.log(onBoarding02({name: 'Gabriel Oliveira Pinto', function_employee: 'St
 
 
 type Person03 = {
-    name: string,
-    functionEmployee: string,
+    name: string
+    functionEmployee: string
     language: string
 }
 
@@ -111,3 +111,38 @@ interface Cat {
 }
 
 type Animal = Dog & Cat
+
+
+type User = {
+    name: string
+    email: string
+}
+
+
+type Admin = {
+    name: string
+    email: string
+    admin: true
+}
+
+
+const user: User = {
+    name: 'Gabriel',
+    email: 'example123@hotmail.com'
+}
+
+
+const admin: Admin = {
+    name: 'Rebeca',
+    email: 'example321@hotmail.com',
+    admin: true
+}
+
+
+function acessSys<T>(user: T): T {
+    return user
+}
+
+
+console.log(acessSys<User>(user))
+console.log(acessSys<Admin>(admin))
